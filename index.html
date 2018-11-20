@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Browser Wars Game</title>
+    <style>
+        #btn {
+            color: red;
+            font-weight: bold;
+            background-color: white;
+        }
+    </style>
+
+</head>
+
+<body>
+    <script>
+        /*
+        Canvas Layout
+        Objects Created
+        Start Button
+        Movements of char
+        Movements of Opp
+        Scoring System
+        */
+        //Main Layout
+        // Game Area
+        function draw() {
+            var ctx = document.getElementById("myCanvas").getContext("2d");
+            ctx.arc(300, 300, 240, 0, Math.PI * 2, false); // x, y, radius, startAngle, endAngle, true/false
+            ctx.stroke();
+            ctx.fillStyle = "#add8e6";
+            ctx.fill();
+            ctx.strokeStyle = "black";
+        }
+
+        /*
+            var circleStart = 5;
+            var width = 10;
+            var height = 10;
+            var score = 0;
+            var food;
+            var avoid;
+            */
+        window.onload = draw;
+    </script>
+    <canvas id="myCanvas" width="600" height="600">
+        <button id='btn'>START</button>
+        >
+</body>
+
+</html>
